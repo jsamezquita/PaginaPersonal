@@ -9,278 +9,412 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
+  <!-- 
+	Observaciones generales:
+	El documento tiene bloques y secciones correctamente definidas. Se tiene un orden jerárquico consistente. Las secciones 
+	lógicas se pueden diferenciar claramente. El código es legible y el contenido es responsive.
 
-<head>
-  <link rel="stylesheet" href="style.css" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-  </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-  </script>
-  <title>Julian Amezquita - My Web Page</title>
-</head>
+	En las posteriores secciones del documento se incluirán comentarios adicionales.
+-->
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- En esta sección no se tienen observaciones importantes. El título de la página es el nombre del autor. -->
+    <title>Julian Amezquita - My Web Page</title>
+  </head>
 
-<body>
-  <header>
-    <div>
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Mi página web</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#acad">Academic information</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#bio">Biographic information</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#coni">Contact info</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#conf">Contact form</a>
-            </li>
-          </ul>
+  <body>
+    <header>
+      <div>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">Mi página web</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Se puede observar una buena distribución del contenido y el uso de una barra de navegación. -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#acad">Academic information</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#bio">Biographic information</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#coni">Contact info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#conf">Contact form</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="container banner-header">
+          <img
+            src="perfil.png"
+            alt="A picture of myself with my dog"
+            style="width: 40%; margin-top: 20px"
+          />
+          <p>
+            Hi, I'm <span class="cyan-color">Julian Amezquita!</span><br /><span
+              style="font-size: calc(10px + 3.5vw)"
+              >And this is my web page.</span
+            >
+          </p>
         </div>
-      </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <!--Academic information-->
+        <!-- No hay ninguna observación acerca de esta sección -->
+        <div class="container-fluid academic">
+          <img src="uandes.png" alt="Universidad de los Andes icon and title" />
+          <p>
+            <span class="cyan-color transition">Hi,</span> I'm a student of
+            Universidad de los Andes currently studying sotfware engineering.
+            I'm coursing my seventh semester and I aspire one day to get a
+            Mastery in cibersecurity.<br /><br />My interests tend towards
+            security and plain/back-end development applications.<br />
+          </p>
+          <div class="cyan-color transition">
+            Here are some of my past projects!
+          </div>
+          <div class="accordion" id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    Nano X
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseOne"
+                class="collapse"
+                aria-labelledby="headingOne"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  <img src="nanox.PNG" alt="Nanox title/icon" />
+                  <p>
+                    The idea was realized in the context of the carpal tunnel
+                    syndrome with the objective of preventing its condition. The
+                    idealized solution was a bracelet which was able to tell if
+                    your hand positioning was not adequate, or if there was
+                    sustained wrist flexion. The information will be then
+                    transmited to an cellphone app which will send the alarms or
+                    make recommendations to the user.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="card2">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Das Buch
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  <img src="dasbuch.PNG" alt="Das Buch title/icon" />
+                  <p>
+                    Das Buch's idea was to create a website with the objective
+                    of facilitating recommendations to rookies/experimented
+                    readers who want to expand their reading horizons. The
+                    website asks about your reading likes and based on that, it
+                    returns to you a list of books outside of your usual
+                    literature genre/writer diet.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="acad">
+            <div class="cyan-color transition">Academic formation</div>
+            <img
+              src="gel.jpeg"
+              alt="front picture of the Gimnasio El Lago establishment"
+            />
+            <p>
+              When I was little, I studied in
+              <a href="https://www.gimnasioellago.edu.co/">Gimnasio el Lago</a>
+              where I completed the first year of my elementary studies. It was
+              a really big school, I did not have many friends but I used to go
+              clay after classes, which were very entertaining. When I took the
+              school bus with my brother I used to have long conversations with
+              his friends who where very kind to me.
+            </p>
+            <div class="transition">
+              <hr />
+            </div>
+            <img
+              src="cmsb.webp"
+              alt="front picture of the Colegio Militar Simon Bolivar establishment"
+            />
+            <p>
+              After finishing my first year in elementary studies, I was
+              matriculated in
+              <a href="https://www.colegiomilitarsimonbolivar.com/"
+                >Colegio Militar Simón Bolivar</a
+              >
+              where I studied until I graduated. I was and outstanding student
+              for the first and last 3 years while I attented classes in this
+              school. Because it was a Military School, there was no science,
+              humanity or arts branches to "specialize". Instead, we were given
+              military instruction on fridays and saturdays. During this
+              instruction days I learned a lot about the military lifestyle.
+            </p>
+            <div class="transition">
+              <hr />
+            </div>
+            <img
+              src="mariolaserna.jpg"
+              alt="front picture of the Mario Laserna building, the most emblematic of Universidad de los Andes"
+            />
+            <p>
+              I got matriculated in software engineering at
+              <a href="https://uniandes.edu.co/en">Universidad de los Andes</a>
+              in the 2020-02 term. I am currently coursing my 7th semester and I
+              am looking forward to graduate next semester. I really like
+              spending time inside the university campus so I used to stay to
+              9:00 p.m, most of the time working in Waira ML612/613.
+              <br /><br /><br /><br />
+            </p>
+          </div>
+        </div>
+      </section>
 
       <div class="container banner-header">
-        <img src="perfil.png" alt="A picture of myself with my dog" style="width: 40%; margin-top: 20px;" />
-        <p>Hi, I'm <span class="cyan-color">Julian Amezquita!</span><br><span style="font-size:calc(10px + 3.5vw);">And
-            this is my web
-            page.</span></p>
+        <p class="cyan-color">Now, here is some biographic info!</p>
       </div>
-    </div>
-  </header>
-  <main>
-
-    <section>
-      <!--Academic information-->
-      <div class="container-fluid academic">
-        <img src="uandes.png" alt="Universidad de los Andes icon and title" />
-        <p>
-          <span class="cyan-color transition">Hi,</span> I'm a student of Universidad de los
-          Andes currently studying sotfware engineering. I'm coursing my seventh semester and I aspire one day to get a
-          Mastery in cibersecurity.<br><br>My interests tend towards security and plain/back-end development
-          applications.<br>
-        </p>
-        <div class="cyan-color transition">Here are some of my past projects!</div>
-        <div class="accordion" id="accordion">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
-                  aria-expanded="false" aria-controls="collapseOne">
-                  Nano X
-                </button>
-              </h5>
-            </div>
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-              <div class="card-body">
-                <img src="nanox.PNG" alt="Nanox title/icon" />
-                <p>
-                  The idea was realized in the context of the carpal tunnel syndrome with the objective of preventing
-                  its condition.
-                  The idealized solution was a bracelet which was able to tell if your hand positioning was not
-                  adequate, or if there
-                  was sustained wrist flexion. The information will be then transmited to an cellphone app which will
-                  send the alarms
-                  or make recommendations to the user.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card" id="card2">
-            <div class="card-header" id="headingTwo">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                  aria-expanded="false" aria-controls="collapseTwo">
-                  Das Buch
-                </button>
-              </h5>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-              <div class="card-body">
-                <img src="dasbuch.PNG" alt="Das Buch title/icon" />
-                <p>
-                  Das Buch's idea was to create a website with the objective of facilitating recommendations to
-                  rookies/experimented
-                  readers who want to expand their reading horizons. The website asks about your reading likes and based
-                  on that,
-                  it returns to you a list of books outside of your usual literature genre/writer diet.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="acad">
-          <div class="cyan-color transition">Academic formation</div>
-          <img src="gel.jpeg" alt="front picture of the Gimnasio El Lago establishment" />
-          <p>
-            When I was little, I studied in <a href="https://www.gimnasioellago.edu.co/">Gimnasio el Lago</a> where I
-            completed
-            the first year of my elementary studies. It was a really big school, I did not have many friends but I used
-            to go
-            clay after classes, which were very entertaining. When I took the school bus with my brother I used to have
-            long
-            conversations with his friends who where very kind to me.
-          </p>
-          <div class="transition">
-            <hr>
-          </div>
-          <img src="cmsb.webp" alt="front picture of the Colegio Militar Simon Bolivar establishment" />
-          <p>
-            After finishing my first year in elementary studies, I was matriculated in
-            <a href="https://www.colegiomilitarsimonbolivar.com/">Colegio Militar Simón Bolivar</a> where I studied
-            until I graduated.
-            I was and outstanding student for the first and last 3 years while I attented classes in this school.
-            Because it was a Military School, there was no science, humanity or arts branches to "specialize". Instead,
-            we were given
-            military instruction on fridays and saturdays. During this instruction days I learned a lot about the
-            military lifestyle.
-          </p>
-          <div class="transition">
-            <hr>
-          </div>
-          <img src="mariolaserna.jpg"
-            alt="front picture of the Mario Laserna building, the most emblematic of Universidad de los Andes" />
-          <p>
-            I got matriculated in software engineering at <a href="https://uniandes.edu.co/en">Universidad de los
-              Andes</a> in the 2020-02 term.
-            I am currently coursing my 7th semester and I am looking forward to graduate next semester. I really like
-            spending time inside the
-            university campus so I used to stay to 9:00 p.m, most of the time working in Waira ML612/613.
-            <br><br><br><br>
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <div class="container banner-header">
-      <p class="cyan-color">Now, here is some biographic info!</p>
-    </div>
-
-    <section>
-      <!--Biographic Information-->
-      <!--Carousel-->
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width:45%;margin:0 auto;">
-        <div class="carousel-inner" id="bio">
-          <div class="carousel-item active">
-            <div class="card mb-3">
-              <div class="row no-gutters">
-                <img class="card-img" src="drawing.jpeg" alt="It's a drawing of me!" />
-                <div class="card-body">
-                  <h2 class="card-title">Biographic information</h2>
-                  <p>My name is Julian Stiven Amezquita and I am 20 years old. I was born december 5 of 1999, and I have
-                    two brothers. My graduation ceremony took place in <a
-                      href="https://www.colegiomilitarsimonbolivar.com/">Colegio
-                      Militar Simón Bolivar</a> when I was 16. I studied my highschool, middleschool and most of
-                    elementary in that establishment.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card mb-3">
-              <div class="row no-gutters">
-                <img class="card-img" src="highschool.jpg" alt="Jasper High School entrance picture" />
-                <div class="card-body">
-                  <h2 class="card-title">Biographic information</h2>
-                  <p>After graduation, I took a flight to a little town in United States called Jasper, in which I
-                    attented classes for six months at <a href="https://jhs.gjcs.k12.in.us/">Jasper High School</a>,
-                    where I studied, practiced and polished my english.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card mb-3">
-              <div class="row no-gutters">
-                <img class="card-img" src="origami.jpg" alt="An origami swan" />
-                <div class="card-body">
-                  <h2 class="card-title">Biographic information</h2>
-                  <p>I have an excesive ammount of hobbies since I easily get bored from routine. What I usually do is:
-                    stick with certain activity for a short period, and then I shuffle with whatever I feel will be more
-                    satisfying at the moment.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card mb-3">
-              <div class="row no-gutters">
-                <img class="card-img" src="terry.jpeg" alt="Terry, my pet. It's pug" />
-                <div class="card-body">
-                  <h2 class="card-title">Biographic information</h2>
-                  <p>I have a little dog, his name is <a href="https://www.instagram.com/terry_chimbita/">Terry</a>. He
-                    has been more than 12 years with our family and he certainly is the favourite and most loved one
-                    among us.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </section>
-    <!--Hobbies!-->
-    <!--Carousel-->
-    <section class="hobbies">
-      <div class="card mb-3">
-        <div id="carouselExampleControls2" class="carousel slide" data-ride="false">
-          <div class="carousel-inner">
-            <br>
-            <h1>Some interesting videos!</h1><br>
+      <!-- No hay ninguna observación acerca de esta sección -->
+      <section>
+        <!--Biographic Information-->
+        <!--Carousel-->
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-ride="carousel"
+          style="width: 45%; margin: 0 auto"
+        >
+          <div class="carousel-inner" id="bio">
             <div class="carousel-item active">
-              <div class="hobbiesvideo">
-                <embed src="https://www.youtube.com/embed/J---aiyznGQ?autohide=1&autoplay=0" wmode="transparent"
-                  type="video/mp4" width="100%" height="100%" allow="autoplay; encrypted-media; picture-in-picture"
-                  allowfullscreen title="Keyboard Cat" />
+              <div class="card mb-3">
+                <div class="row no-gutters">
+                  <img
+                    class="card-img"
+                    src="drawing.jpeg"
+                    alt="It's a drawing of me!"
+                  />
+                  <div class="card-body">
+                    <h2 class="card-title">Biographic information</h2>
+                    <p>
+                      My name is Julian Stiven Amezquita and I am 20 years old.
+                      I was born december 5 of 1999, and I have two brothers. My
+                      graduation ceremony took place in
+                      <a href="https://www.colegiomilitarsimonbolivar.com/"
+                        >Colegio Militar Simón Bolivar</a
+                      >
+                      when I was 16. I studied my highschool, middleschool and
+                      most of elementary in that establishment.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="hobbiesvideo">
-                <embed src="https://www.youtube.com/embed/MaFEHf34fCQ?autohide=1&autoplay=0" wmode="transparent"
-                  type="video/mp4" width="100%" height="100%" allow="autoplay; encrypted-media; picture-in-picture"
-                  allowfullscreen title="Do me a favour - Artic Monkeys" />
+              <div class="card mb-3">
+                <div class="row no-gutters">
+                  <img
+                    class="card-img"
+                    src="highschool.jpg"
+                    alt="Jasper High School entrance picture"
+                  />
+                  <div class="card-body">
+                    <h2 class="card-title">Biographic information</h2>
+                    <p>
+                      After graduation, I took a flight to a little town in
+                      United States called Jasper, in which I attented classes
+                      for six months at
+                      <a href="https://jhs.gjcs.k12.in.us/"
+                        >Jasper High School</a
+                      >, where I studied, practiced and polished my english.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="hobbiesvideo">
-                <embed src="https://www.youtube.com/embed/kUsxMXwCW8A?autohide=1&autoplay=0" wmode="transparent"
-                  type="video/mp4" width="100%" height="100%" allow="autoplay; encrypted-media; picture-in-picture"
-                  allowfullscreen title="Dragon de origami" />
+              <div class="card mb-3">
+                <div class="row no-gutters">
+                  <img
+                    class="card-img"
+                    src="origami.jpg"
+                    alt="An origami swan"
+                  />
+                  <div class="card-body">
+                    <h2 class="card-title">Biographic information</h2>
+                    <p>
+                      I have an excesive ammount of hobbies since I easily get
+                      bored from routine. What I usually do is: stick with
+                      certain activity for a short period, and then I shuffle
+                      with whatever I feel will be more satisfying at the
+                      moment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card mb-3">
+                <div class="row no-gutters">
+                  <img
+                    class="card-img"
+                    src="terry.jpeg"
+                    alt="Terry, my pet. It's pug"
+                  />
+                  <div class="card-body">
+                    <h2 class="card-title">Biographic information</h2>
+                    <p>
+                      I have a little dog, his name is
+                      <a href="https://www.instagram.com/terry_chimbita/"
+                        >Terry</a
+                      >. He has been more than 12 years with our family and he
+                      certainly is the favourite and most loved one among us.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="prev"
+          >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="next"
+          >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
         </div>
+      </section>
+      <!--Hobbies!-->
+      <!--Carousel-->
+      <!-- No hay ninguna observación acerca de esta sección -->
+      <section class="hobbies">
+        <div class="card mb-3">
+          <div
+            id="carouselExampleControls2"
+            class="carousel slide"
+            data-ride="false"
+          >
+            <div class="carousel-inner">
+              <br />
+              <h1>Some interesting videos!</h1>
+              <br />
+              <div class="carousel-item active">
+                <div class="hobbiesvideo">
+                  <embed
+                    src="https://www.youtube.com/embed/J---aiyznGQ?autohide=1&autoplay=0"
+                    wmode="transparent"
+                    type="video/mp4"
+                    width="100%"
+                    height="100%"
+                    allow="autoplay; encrypted-media; picture-in-picture"
+                    allowfullscreen
+                    title="Keyboard Cat"
+                  />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="hobbiesvideo">
+                  <embed
+                    src="https://www.youtube.com/embed/MaFEHf34fCQ?autohide=1&autoplay=0"
+                    wmode="transparent"
+                    type="video/mp4"
+                    width="100%"
+                    height="100%"
+                    allow="autoplay; encrypted-media; picture-in-picture"
+                    allowfullscreen
+                    title="Do me a favour - Artic Monkeys"
+                  />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="hobbiesvideo">
+                  <embed
+                    src="https://www.youtube.com/embed/kUsxMXwCW8A?autohide=1&autoplay=0"
+                    wmode="transparent"
+                    type="video/mp4"
+                    width="100%"
+                    height="100%"
+                    allow="autoplay; encrypted-media; picture-in-picture"
+                    allowfullscreen
+                    title="Dragon de origami"
+                  />
+                </div>
+              </div>
       </div>
     </section>
     <!--Forms and Contact info!-->
@@ -314,37 +448,139 @@
               <label for="inputName">Name</label>
               <input type="name" class="form-control" id="inputName" placeholder="Enter your name">
             </div>
-            <div class="form-group">
-              <label for="inputSubject">Subject</label>
-              <input type="subject" class="form-control" id="inputSubject" placeholder="Enter the subject">
-            </div>
-            <div class="form-group">
-              <label for="inputMessage">Message</label>
-              <textarea type="text" class="form-control" id="inputMessage" style="height:150px;"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send</button>
-          </form>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleControls2"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleControls2"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
-        </div>
-        <!--End Form-->
-      </div>
-    </section>
-    <!--End Form and Contact info-->
-  </main>
-  <footer>
-    <div class="footer container-fluid">
-      <a href="https://www.instagram.com/jl_stv/">Instagram</a>
-      -
-      <a href="https://github.com/jsamezquita">Github</a>
-      -
-      <a href="https://www.facebook.com/stiven.jules">Facebook</a><br>
-      <a href="https://uniandes.edu.co/en">Universidad de los
-        Andes</a><br>
-      All rights reserved.
-    </div>
-  </footer>
-</body>
+      </section>
+      <!--Forms and Contact info!-->
+      <section>
+        <div class="contact row">
+          <!--Contact Info-->
+          <div id="coni" class="col-md-6">
+            <div class="contact-in">
+              <p>
+                Email
+                <small id="emailHelp" class="form-text text-muted"
+                  >js.amezquita@uniandes.edu.co</small
+                >
+              </p>
+              <p>
+                Cellphone Number
+                <!-- El id emailHelp está duplicado -->
 
+                <small id="emailHelp" class="form-text text-muted"
+                  >+57 315 524 7353</small
+                >
+              </p>
+              <p>
+                Contact Number
+                <small id="emailHelp" class="form-text text-muted"
+                  >8042935</small
+                >
+              </p>
+              <a href="https://www.instagram.com/jl_stv/"
+                ><img class="icon" src="ig.png" alt="Instagram icon"
+              /></a>
+              <a href="https://www.facebook.com/stiven.jules/"
+                ><img class="icon" src="fb.png" alt="Facebook icon"
+              /></a>
+              <a href="https://github.com/jsamezquita"
+                ><img class="icon" src="gh.png" alt="Github icon"
+              /></a>
+            </div>
+          </div>
+          <!--Form-->
+          <!-- No hay ninguna observación acerca de esta sección -->
+
+          <div id="conf" class="col-md-6">
+            <div class="contact-in">
+              <form>
+                <div class="form-group">
+                  <label for="inputEmail">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                  />
+                  <small id="emailHelp" class="form-text text-muted"
+                    >We'll never share your email with anyone else.</small
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="inputName">Name</label>
+                  <input
+                    type="name"
+                    class="form-control"
+                    id="inputName"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="inputSubject">Subject</label>
+                  <input
+                    type="subject"
+                    class="form-control"
+                    id="inputSubject"
+                    placeholder="Enter the subject"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="inputMessage">Message</label>
+                  <textarea
+                    type="text"
+                    class="form-control"
+                    id="inputMessage"
+                    style="height: 150px"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+              </form>
+            </div>
+          </div>
+          <!--End Form-->
+        </div>
+      </section>
+      <!--End Form and Contact info-->
+    </main>
+    <footer>
+      <!-- No hay ninguna observación acerca de esta sección -->
+
+      <div class="footer container-fluid">
+        <a href="https://www.instagram.com/jl_stv/">Instagram</a>
+        -
+        <a href="https://github.com/jsamezquita">Github</a>
+        -
+        <a href="https://www.facebook.com/stiven.jules">Facebook</a><br />
+        <a href="https://uniandes.edu.co/en">Universidad de los Andes</a><br />
+        All rights reserved.
+      </div>
+    </footer>
+  </body>
 </html>
 
 <!-- Comentarios:
