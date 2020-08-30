@@ -1,3 +1,13 @@
+/*
+
+Se presenta un buen uso del archivo css, este hace buen manejo 
+de elementos por selectores, clases e identificadores. Por otro lado, estas reglas
+permiten que el archivo tenga una apariencia visual agradable para el usuario.
+Se puede complementar con los comentarios realizados acerca de la apariencia de la página
+realizados en el archivo .html.
+
+*/
+
 *{
     font-family: Helvetica;
 }
