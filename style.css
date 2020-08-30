@@ -1,3 +1,4 @@
+
 /* En este archivo de estilos existen problemas con la organización del contenido, puesto
    que están las reglas de selectores de clase mezcladas con las reglas de selectores de id.
    Por otro lado, no se dividieron correctamente los contenidos asociados a las diferentes secciones
@@ -8,6 +9,16 @@
 
 /* El diseño estético de la página es adecuado, tiene una gama de colores agradable, bloques y secciones
    consistentes, tipografía amigable e imágenes */
+
+/*
+
+Se presenta un buen uso del archivo css, este hace buen manejo 
+de elementos por selectores, clases e identificadores. Por otro lado, estas reglas
+permiten que el archivo tenga una apariencia visual agradable para el usuario.
+Se puede complementar con los comentarios realizados acerca de la apariencia de la página
+realizados en el archivo .html.
+
+*/
 
 *{
     font-family: Helvetica;

@@ -1,3 +1,12 @@
+<!--
+  Observaciones:
+  - El codigo html es legible y tiene una estructura consistente.
+  - Las reglas CSS estan bien definidas.
+  - La página es estética, la navegación está bien estructurada.
+  - En mi opinión, el tamaño por defecto de la letra es demasiado grande.
+  - Hay id's repetidos en la sección de contacto.
+  - Hay un error recurrente al usar porcentajes en las dimensiones de elementos embed.
+-->
 <!DOCTYPE html>
 <html lang="en">
   <!-- 
@@ -406,6 +415,38 @@
                   />
                 </div>
               </div>
+      </div>
+    </section>
+    <!--Forms and Contact info!-->
+    <section>
+      <div class="contact row">
+        <!--Contact Info-->
+        <div id="coni" class="col-md-6">
+          <div class="contact-in">
+          <p>Email
+          <small id="emailHelp" class="form-text text-muted">js.amezquita@uniandes.edu.co</small></p>
+          <p>Cellphone Number
+          <small id="emailHelp2" class="form-text text-muted">+57 315 524 7353</small></p>
+          <p>Contact Number
+          <small id="emailHelp3" class="form-text text-muted">8042935</small></p>
+          <a href="https://www.instagram.com/jl_stv/"><img class="icon" src="ig.png" alt="Instagram icon"/></a>
+          <a href="https://www.facebook.com/stiven.jules/"><img class="icon" src="fb.png" alt="Facebook icon"/></a>
+          <a href="https://github.com/jsamezquita"><img class="icon" src="gh.png" alt="Github icon"/></a>
+        </div>
+        </div>
+        <!--Form-->
+        <div id="conf" class="col-md-6">
+          <div class="contact-in">
+          <form>
+            <div class="form-group">
+              <label for="inputEmail">Email address</label>
+              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="inputName">Name</label>
+              <input type="name" class="form-control" id="inputName" placeholder="Enter your name">
             </div>
             <a
               class="carousel-control-prev"
@@ -541,3 +582,28 @@
     </footer>
   </body>
 </html>
+
+<!-- Comentarios:
+  
+  -El código es legible; se encuentra bien presentado, indentado y mostrado de manera jerárquica.
+
+  -Las secciones están definidas de manera clara (banner, navbar, etc). Además de presentar secciones
+  con comentarios dentro del código.
+
+  -El diseño se encuentra estéticamente correcto; se puede ver una paleta de colores adecuada
+  para lo presentado, la disposición bien distribuida. Es decir, es atractiva visualmente para el
+  usuario e incita a desplazarse por ella. Por otro lado, las imágenes presentan los atributos importantes,
+  la tipografía y demás está bien conseguida.
+
+  -La navegación es adecuada a la exigida y se encuentra bien manejada por la barra de navegación.
+
+  -La herramienta de W3 arroja lo siguiente: 
+
+        -Bad value 100% for attribute width on element embed: Expected a digit but saw % instead.
+        From line 246, column 17; to line 248, column 57
+        -Duplicate ID emailHelp.
+         From line 286, column 11; to line 286, column 61
+        
+  Dentro de los principales errores encontrados en el archivo. Se recomienda evisar la página de W3.
+
+  -->
