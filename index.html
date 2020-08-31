@@ -1,21 +1,18 @@
 <!--
-  Observaciones:
-  - El codigo html es legible y tiene una estructura consistente.
-  - Las reglas CSS estan bien definidas.
-  - La página es estética, la navegación está bien estructurada.
-  - En mi opinión, el tamaño por defecto de la letra es demasiado grande.
-  - Hay id's repetidos en la sección de contacto.
-  - Hay un error recurrente al usar porcentajes en las dimensiones de elementos embed.
+  OBSERVACIONES:
+  1. El tamaño de letra es un poco grande. Buena selección de colores.
+  2. Tambien me parece que el contenido está un poco pegado al margen. Si se
+     separaran un poco mejoraría la legibilidad de la página.
+  3. EL código es perfectamente legible.
+  4. Se podría haber aprovechado un poco más Bootstrap para hacer una maquetación que
+     se ajustara más al contenido de los dispositivos. Sin embargo, muy bien.
+  5. De acuerdo con el valdiador, se deben usar digitos para definir el ancho de los elementos embed.
+  6. Al cerrar una sección habían elementos abiertos.
+  7. Hubo ids repetidos.
+  8. Hubiera sido preferible crear otra carpeta para todo el contenido multimedia.
 -->
 <!DOCTYPE html>
 <html lang="en">
-  <!-- 
-	Observaciones generales:
-	El documento tiene bloques y secciones correctamente definidas. Se tiene un orden jerárquico consistente. Las secciones 
-	lógicas se pueden diferenciar claramente. El código es legible y el contenido es responsive.
-
-	En las posteriores secciones del documento se incluirán comentarios adicionales.
--->
   <head>
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
@@ -42,7 +39,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <!-- En esta sección no se tienen observaciones importantes. El título de la página es el nombre del autor. -->
+    <!--Buen head-->
     <title>Julian Amezquita - My Web Page</title>
   </head>
 
@@ -87,6 +84,7 @@
             alt="A picture of myself with my dog"
             style="width: 40%; margin-top: 20px"
           />
+          <!--Es mejor hacer uso del documento style.css para manejar los estilos.-->
           <p>
             Hi, I'm <span class="cyan-color">Julian Amezquita!</span><br /><span
               style="font-size: calc(10px + 3.5vw)"
@@ -95,11 +93,11 @@
           </p>
         </div>
       </div>
+      <!--Excelente distribución y eso de la etiqueta header.-->
     </header>
     <main>
       <section>
         <!--Academic information-->
-        <!-- No hay ninguna observación acerca de esta sección -->
         <div class="container-fluid academic">
           <img src="uandes.png" alt="Universidad de los Andes icon and title" />
           <p>
@@ -234,12 +232,13 @@
             </p>
           </div>
         </div>
+        <!--Buena sección--->
       </section>
 
       <div class="container banner-header">
         <p class="cyan-color">Now, here is some biographic info!</p>
       </div>
-      <!-- No hay ninguna observación acerca de esta sección -->
+      <!-- ¿Por qué no se incluyó el título dentro de la sección? -->
       <section>
         <!--Biographic Information-->
         <!--Carousel-->
@@ -358,6 +357,7 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+        <!--Buen uso del carrusel para representar la información. Quedó chebere.-->
       </section>
       <!--Hobbies!-->
       <!--Carousel-->
@@ -416,6 +416,7 @@
                 </div>
               </div>
       </div>
+      <!--Buena sección!-->
     </section>
     <!--Forms and Contact info!-->
     <section>
@@ -583,27 +584,3 @@
   </body>
 </html>
 
-<!-- Comentarios:
-  
-  -El código es legible; se encuentra bien presentado, indentado y mostrado de manera jerárquica.
-
-  -Las secciones están definidas de manera clara (banner, navbar, etc). Además de presentar secciones
-  con comentarios dentro del código.
-
-  -El diseño se encuentra estéticamente correcto; se puede ver una paleta de colores adecuada
-  para lo presentado, la disposición bien distribuida. Es decir, es atractiva visualmente para el
-  usuario e incita a desplazarse por ella. Por otro lado, las imágenes presentan los atributos importantes,
-  la tipografía y demás está bien conseguida.
-
-  -La navegación es adecuada a la exigida y se encuentra bien manejada por la barra de navegación.
-
-  -La herramienta de W3 arroja lo siguiente: 
-
-        -Bad value 100% for attribute width on element embed: Expected a digit but saw % instead.
-        From line 246, column 17; to line 248, column 57
-        -Duplicate ID emailHelp.
-         From line 286, column 11; to line 286, column 61
-        
-  Dentro de los principales errores encontrados en el archivo. Se recomienda evisar la página de W3.
-
-  -->
