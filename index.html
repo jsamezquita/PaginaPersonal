@@ -71,12 +71,12 @@
         <div class="accordion" id="accordion">
           <div class="card">
             <div class="card-header" id="headingOne">
-              <h5 class="mb-0">
+              <h1 class="mb-0">
                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
                   aria-expanded="false" aria-controls="collapseOne">
                   Nano X
                 </button>
-              </h5>
+              </h1>
             </div>
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
               <div class="card-body">
@@ -244,21 +244,21 @@
             <div class="carousel-item active">
               <div class="hobbiesvideo">
                 <embed src="https://www.youtube.com/embed/J---aiyznGQ?autohide=1&autoplay=0" wmode="transparent"
-                  type="video/mp4" width="100%" height="100%" allow="autoplay; encrypted-media; picture-in-picture"
+                  type="video/mp4" allow="autoplay; encrypted-media; picture-in-picture"
                   allowfullscreen title="Keyboard Cat" />
               </div>
             </div>
             <div class="carousel-item">
               <div class="hobbiesvideo">
                 <embed src="https://www.youtube.com/embed/MaFEHf34fCQ?autohide=1&autoplay=0" wmode="transparent"
-                  type="video/mp4" width="100%" height="100%" allow="autoplay; encrypted-media; picture-in-picture"
+                  type="video/mp4" allow="autoplay; encrypted-media; picture-in-picture"
                   allowfullscreen title="Do me a favour - Artic Monkeys" />
               </div>
             </div>
             <div class="carousel-item">
               <div class="hobbiesvideo">
                 <embed src="https://www.youtube.com/embed/kUsxMXwCW8A?autohide=1&autoplay=0" wmode="transparent"
-                  type="video/mp4" width="100%" height="100%" allow="autoplay; encrypted-media; picture-in-picture"
+                  type="video/mp4" allow="autoplay; encrypted-media; picture-in-picture"
                   allowfullscreen title="Dragon de origami" />
               </div>
             </div>
@@ -275,17 +275,18 @@
       </div>
     </section>
     <!--Forms and Contact info!-->
-    <section>
-      <div class="contact row">
+    <section class="contact">
+      <h2 style="margin-left:20px;">Contact info</h2>
+      <div class="row">
         <!--Contact Info-->
         <div id="coni" class="col-md-6">
           <div class="contact-in">
           <p>Email
-          <small id="emailHelp" class="form-text text-muted">js.amezquita@uniandes.edu.co</small></p>
+          <small class="form-text text-muted">js.amezquita@uniandes.edu.co</small></p>
           <p>Cellphone Number
-          <small id="emailHelp" class="form-text text-muted">+57 315 524 7353</small></p>
+          <small class="form-text text-muted">+57 315 524 7353</small></p>
           <p>Contact Number
-          <small id="emailHelp" class="form-text text-muted">8042935</small></p>
+          <small class="form-text text-muted">8042935</small></p>
           <a href="https://www.instagram.com/jl_stv/"><img class="icon" src="ig.png" alt="Instagram icon"/></a>
           <a href="https://www.facebook.com/stiven.jules/"><img class="icon" src="fb.png" alt="Facebook icon"/></a>
           <a href="https://github.com/jsamezquita"><img class="icon" src="gh.png" alt="Github icon"/></a>
@@ -303,15 +304,15 @@
             </div>
             <div class="form-group">
               <label for="inputName">Name</label>
-              <input type="name" class="form-control" id="inputName" placeholder="Enter your name">
+              <input class="form-control" id="inputName" placeholder="Enter your name">
             </div>
             <div class="form-group">
               <label for="inputSubject">Subject</label>
-              <input type="subject" class="form-control" id="inputSubject" placeholder="Enter the subject">
+              <input  class="form-control" id="inputSubject" placeholder="Enter the subject">
             </div>
             <div class="form-group">
               <label for="inputMessage">Message</label>
-              <textarea type="text" class="form-control" id="inputMessage" style="height:150px;"></textarea>
+              <textarea class="form-control" id="inputMessage" style="height:150px;"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Send</button>
           </form>
